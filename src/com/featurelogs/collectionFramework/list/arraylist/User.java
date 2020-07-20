@@ -1,4 +1,4 @@
-package com.featurelogs.list.arraylist;
+package com.featurelogs.collectionFramework.list.arraylist;
 
 import java.util.Objects;
 

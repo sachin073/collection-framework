@@ -1,10 +1,9 @@
-package com.featurelogs.list.arraylist;
+package com.featurelogs.collectionFramework.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Sorting {
     public static void main(String[] args) {
@@ -13,13 +12,13 @@ public class Sorting {
 
         Collections.shuffle(counting);
         // print after shuffle
-        counting.forEach(System.out::print);
+        counting.forEach(i -> System.out.print(i + " "));
         System.out.println();
 
         //Sorting
         // 1. using comparable. Integer class implements comparable so, sorting works!!
         Collections.sort(counting);
-        counting.forEach(System.out::print);
+        counting.forEach(i -> System.out.print(i + " "));
         System.out.println();
 
         Collections.shuffle(counting);
@@ -34,7 +33,7 @@ public class Sorting {
                 return 0;
         });
 
-        counting.forEach(System.out::print);
+        counting.forEach(i -> System.out.print(i + " "));
     }
 
 }

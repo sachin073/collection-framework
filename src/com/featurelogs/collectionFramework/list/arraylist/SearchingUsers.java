@@ -1,7 +1,6 @@
-package com.featurelogs.list.arraylist;
+package com.featurelogs.collectionFramework.list.arraylist;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;

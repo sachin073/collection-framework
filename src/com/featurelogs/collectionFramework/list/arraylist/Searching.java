@@ -1,4 +1,4 @@
-package com.featurelogs.list.arraylist;
+package com.featurelogs.collectionFramework.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ public class Searching {
         // randomize collection
         Collections.shuffle(counting);
         // print after shuffle
-        counting.forEach(System.out::print);
+        counting.forEach(i -> System.out.print(i + " "));
         System.out.println();
 
         // searching without using in-build functions i.e. basic loop

@@ -1,7 +1,9 @@
-package com.featurelogs.list.arraylist;
+package com.featurelogs.collectionFramework.list.arraylist;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class SortingUsers {
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class SortingUsers {
 
         //Sorting
         // 1. using comparable. Integer class implements comparable so, sorting works!!
-        System.out.println(" \n Sort By id using comparable ");
+        System.out.println(" Sort By id using comparable ");
 
         Collections.sort(users);
         users.forEach(System.out::print);
@@ -38,7 +40,7 @@ public class SortingUsers {
                     return 0;
             }
         });
-        System.out.println(" \n Sort By id ");
+        System.out.println(" \n Sort By id using comparator");
         users.forEach(System.out::print);
 
         users.sort(new Comparator<User>() {
@@ -48,7 +50,7 @@ public class SortingUsers {
             }
         });
 
-        System.out.println(" \n Sort By name ");
+        System.out.println(" \n Sort By name using comparator");
         users.forEach(System.out::print);
     }
 
