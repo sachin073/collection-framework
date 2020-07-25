@@ -1,4 +1,4 @@
-package com.featurelogs.basics.equals;
+package com.featurelogs.basics.equals.strings;
 
 public class StringComparision {
     public static void main(String[] args) {
