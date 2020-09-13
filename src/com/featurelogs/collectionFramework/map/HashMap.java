@@ -26,10 +26,11 @@ public class HashMap {
 		System.out.println("find IT-MGR in employees :"+ employees.get("IT-MGR"));
 		
 		// get keys only
-		map.keySet().forEach(System.out::println);
-
+		System.out.println(" Keys-set : " +map.keySet());
+		
 		// get values only
-		map.values().forEach(System.out::println);
+		System.out.println(" values-set : " +map.values());
+		
 		
 		// iterate on one key-value pair
 		for (Entry<String, Employee> emp : employees.entrySet()) {

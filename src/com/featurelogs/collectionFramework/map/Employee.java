@@ -24,12 +24,12 @@ public class Employee {
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode() {// custom hashcode based on name,id
 		return Objects.hash(name, id);
 	}
 
 	@Override
-	public String toString() {
+	public String toString() {// custom equals based on name,id
 		return "Emp{" + id + " " + name + '}' + " ";
 	}
 }
